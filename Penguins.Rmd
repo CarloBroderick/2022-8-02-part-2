@@ -8,3 +8,30 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+Make sure we have the tidyverse a ggplot for this project
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+```
+
+Example functions:
+
+-   view(penguins)
+
+    -   This creates a tab in the source menu (here) for us the view the entire data set
+
+-   install.packages("palmerpenguins"
+
+    -   installs this package of palmer penguins
+
+# Scatter plot of body mass versus flipper length:
+
+```{r}
+ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) + 
+  geom_point(aes(color = species))
+
+
+```
