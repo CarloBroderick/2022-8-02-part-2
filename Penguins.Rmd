@@ -31,7 +31,13 @@ Example functions:
 
 ```{r}
 ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) + 
-  geom_point(aes(color = species))
+  geom_point(aes(color = species)) +
+  facet_wrap(~island) +
+  theme_minimal() +
+  labs(x = "Bodymass (g)",
+       y = "Flipper length (mm)")
+
+
 
 
 ```
