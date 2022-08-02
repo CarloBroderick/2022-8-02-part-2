@@ -1,0 +1,10 @@
+---
+title: "2022-08-2 Part 2 Penguins"
+author: "Carlo Broderick"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
